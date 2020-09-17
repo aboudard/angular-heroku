@@ -6,6 +6,7 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 Sentry.init({
+  release: "sma-test@1.0.5",
   dsn: 'https://7711fe6c74d84a27b24e183a54c9927c@o439212.ingest.sentry.io/5405606',
   integrations: [
     new Integrations.BrowserTracing({
